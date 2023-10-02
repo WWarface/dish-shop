@@ -10,7 +10,7 @@
 .vscode
 # production
 /build
-
+.prettierrc
 # misc
 .DS_Store
 .env.local
