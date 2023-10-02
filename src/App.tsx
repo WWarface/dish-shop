@@ -1,11 +1,12 @@
-import "./App.css";
+import './App.css'
+import Footer from './components/Footer/Footer'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>OSOPSOSOSOSO</h1>
-    </div>
-  );
+	return (
+		<div className='wrapper'>
+			<Footer />
+		</div>
+	)
 }
 
-export default App;
+export default App
