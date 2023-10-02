@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import { Provider } from "react-redux";
 import { reduxStore } from "./redux/store";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Layout from "./components/pages/Layout/Layout";
+import Home from "./components/pages/Home/Home";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,8 +13,13 @@ const root = ReactDOM.createRoot(
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <App />,
+        element: <Layout />,
+        children:[
+            {
+                path:'/',
+                element:<Home/>
+            },
+        ]
     },
 ])
 
