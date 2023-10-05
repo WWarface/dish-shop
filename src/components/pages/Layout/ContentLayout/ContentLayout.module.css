@@ -1,0 +1,10 @@
+.wrapper{
+    background: rgb(229,73,67);
+    background: linear-gradient(175deg, rgba(229,73,67,1) 14%, rgba(194,54,22,1) 50%, rgba(244,165,101,1) 100%);
+}
+.content{
+    max-width: 1170px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+}
