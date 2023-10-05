@@ -1,9 +1,11 @@
 import React from 'react';
+import FoodCard, {Directions} from "../../FoodCard/FoodCard";
 
 const Home = () => {
     return (
         <div>
-            <h1>Main</h1>
+            <FoodCard/>
+            <FoodCard direction={Directions.REVERSE}/>
         </div>
     );
 };
