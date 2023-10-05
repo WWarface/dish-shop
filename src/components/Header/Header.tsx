@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {FC} from 'react';
 import cl from './Header.module.css'
 import headerLogo from './../../assets/icons/header-logo.svg'
 import {Link} from "react-router-dom";
 
-const Header = () => {
+const Header:FC = () => {
     return (
         <header className={cl.header}>
             <div className={cl.header__content}>
