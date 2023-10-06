@@ -10,9 +10,20 @@
 	align-items: center;
 
 	font-size: 14px;
+	color: #fff;
 }
 
 .iconElement {
 	margin-top: 15px;
 	display: flex;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+.iconElement a {
+	height: 25px;
+}
+
+.iconElement:hover {
+	cursor: pointer;
 }
