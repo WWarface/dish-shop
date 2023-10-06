@@ -1,11 +1,12 @@
 .card{
     display: flex;
-    justify-content: space-between;
+
     font-weight: bold;
     margin: 20px 0 100px 0;
 }
 .card__info{
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     justify-content: center;
 }
@@ -19,7 +20,7 @@
     color: #F69C65
 }
 .card__image{
-    padding: 10px 75px 0 0 ;
+    flex: 1 1 auto;
 }
 .card__image img{
     width: 450px;
