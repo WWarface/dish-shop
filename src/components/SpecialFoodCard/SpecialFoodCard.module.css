@@ -1,8 +1,8 @@
 .card{
     display: flex;
-    justify-content: space-between;
     font-weight: bold;
     margin: 20px 0 100px 0;
+    gap: 20px;
 }
 .card__info{
     display: flex;
@@ -11,18 +11,13 @@
 }
 .card__title{
     font-size: 17px;
+    color: #F69C65
 }
 .card__slogan{
     margin: 12px 0;
     font-size: 20px;
     max-width: 10em;
-    color: #F69C65
-}
-.card__image{
-    padding: 10px 75px 0 0 ;
-}
-.card__image img{
-    width: 450px;
+    color: white;
 }
 .card__button{
     font-size: 13px;
@@ -37,9 +32,13 @@
     box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.55);
     cursor: pointer;
 }
-
-.card__link{
-}
 .link__wrapper{
     display: flex;
+}
+.card__text{
+    max-width: 300px;
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
