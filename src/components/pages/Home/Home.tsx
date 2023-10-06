@@ -16,7 +16,7 @@ const Home = () => {
                 slogan={'We Speak The Good For Language'}
                 buttonValue={'Learn More'}
                 text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda dolorem doloribus magnam minima.'}
-                specialImage={"https://dishshop.adaptable.app/image/f7f91549-9801-4cc1-8028-721495f5ff3e.jpg"}
+                specialImage={'dumplings.png'}
                 secondaryImage={'dumplings.png'}
             />
         </div>
