@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FoodCard from "../../FoodCard/FoodCard";
 import SpecialFoodCard from "../../SpecialFoodCard/SpecialFoodCard";
+import GroceryBasket from "../../GroceryBasket/GroceryBasket";
 
 const Home = () => {
+    const [visible, setVisible] = useState<boolean>(false);
     return (
         <div>
             <FoodCard
@@ -19,6 +21,7 @@ const Home = () => {
                 specialImage={'dumplings.png'}
                 secondaryImage={'dumplings.png'}
             />
+            <GroceryBasket visible={visible} setVisible={setVisible}/>
         </div>
     );
 };
