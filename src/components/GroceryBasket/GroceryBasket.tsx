@@ -16,7 +16,8 @@ const GroceryBasket:FC<GroceryBasket> = ({visible, setVisible}) => {
     }
 
     return (
-        visible ?
+        <>
+            {visible &&
         <div className={cl.wrapper} onClick={wrapperClickHandler}>
             <div className={cl.container} onClick={(e:React.MouseEvent<HTMLDivElement>)=>e.stopPropagation()}>
                 <div className={cl.basket}>
@@ -25,10 +26,11 @@ const GroceryBasket:FC<GroceryBasket> = ({visible, setVisible}) => {
                 </div>
             </div>
         </div>
-            :
+            }
             <div className={cl.basketImage}>
                 <img onClick={()=>setVisible(true)} src={require('../../assets/images/basket.png')} alt="basket"/>
             </div>
+        </>
     );
 };
 

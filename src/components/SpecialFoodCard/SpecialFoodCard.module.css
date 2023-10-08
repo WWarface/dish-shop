@@ -103,6 +103,7 @@
     width: 70%;
     height: 70%;
     position: relative;
+    z-index: 2;
 }
 .card__secondImageWrapper{
     position: absolute;
