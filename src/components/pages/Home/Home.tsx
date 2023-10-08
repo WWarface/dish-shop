@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FoodCard from "../../FoodCard/FoodCard";
 import SpecialFoodCard from "../../SpecialFoodCard/SpecialFoodCard";
+import GroceryBasket from "../../GroceryBasket/GroceryBasket";
 
 const Home = () => {
+    const [visible, setVisible] = useState<boolean>(false);
     return (
         <div>
             <FoodCard
@@ -16,9 +18,10 @@ const Home = () => {
                 slogan={'We Speak The Good For Language'}
                 buttonValue={'Learn More'}
                 text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda dolorem doloribus magnam minima.'}
-                specialImage={"https://dishshop.adaptable.app/image/f7f91549-9801-4cc1-8028-721495f5ff3e.jpg"}
+                specialImage={'dumplings.png'}
                 secondaryImage={'dumplings.png'}
             />
+            <GroceryBasket visible={visible} setVisible={setVisible}/>
         </div>
     );
 };
