@@ -9,6 +9,8 @@
     -moz-box-shadow: 0 10px 5px 0 rgba(0,0,0,0.57),0 5px 5px 1px rgba(0,0,0,0.82);
     box-shadow: 0 15px 10px 2px rgba(0,0,0,0.57), 0 4px 5px 2px rgba(0,0,0,0.82);
     position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .header__logo{}
 .header__content{
@@ -19,6 +21,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header__linksContainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 .header__links{
     display: flex;

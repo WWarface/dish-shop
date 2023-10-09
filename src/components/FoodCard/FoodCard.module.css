@@ -1,0 +1,46 @@
+.card{
+    display: flex;
+
+    font-weight: bold;
+    margin: 20px 0 100px 0;
+}
+.card__info{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.card__title{
+    font-size: 17px;
+}
+.card__slogan{
+    margin: 12px 0;
+    font-size: 20px;
+    max-width: 10em;
+    color: #F69C65
+}
+.card__image{
+    flex: 1 1 auto;
+}
+.card__image img{
+    width: 450px;
+}
+.card__button{
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    background-color: #E67E22;
+    color: white;
+    -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.55);
+    box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.55);
+    cursor: pointer;
+}
+
+.card__link{
+}
+.link__wrapper{
+    display: flex;
+}
