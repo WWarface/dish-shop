@@ -25,4 +25,4 @@ const Header:FC = () => {
     );
 };
 
-export default Header;
+export default Header

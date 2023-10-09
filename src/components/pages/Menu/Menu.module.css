@@ -1,0 +1,23 @@
+.wrapper {
+	/* height: 1500px; */
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+
+	flex-wrap: wrap;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	column-gap: 30px;
+	row-gap: 45px;
+
+	justify-content: space-between;
+}
+
+.wrapper::after {
+	content: '';
+	flex: auto;
+}
+.Menu {
+	margin-top: 50px;
+}
