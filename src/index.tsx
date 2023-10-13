@@ -7,8 +7,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/pages/Layout/Layout'
 import Home from './components/pages/Home/Home'
 import Menu from './components/pages/Menu/Menu'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+
+const client = new QueryClient()
 
 const router = createBrowserRouter([
 	{
@@ -28,8 +31,10 @@ const router = createBrowserRouter([
 
 root.render(
 	<React.StrictMode>
-		<Provider store={reduxStore}>
-			<RouterProvider router={router} />
-		</Provider>
+		<QueryClientProvider client={client}>
+			<Provider store={reduxStore}>
+				<RouterProvider router={router} />
+			</Provider>
+		</QueryClientProvider>
 	</React.StrictMode>
 )
