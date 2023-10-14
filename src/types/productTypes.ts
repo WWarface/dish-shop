@@ -1,7 +1,7 @@
 export interface IProduct{
-    id:string;
+    _id:string;
     name:string;
     price:number;
     description:string;
-    picture?:string;
+    picture: { data: { data:Buffer } , imageType: string };
 }
