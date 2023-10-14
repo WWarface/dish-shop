@@ -14,7 +14,7 @@ const Header:FC = () => {
                     <ul className={cl.header__links}>
                         <li className={cl.header__link}><Link to={'/'}>Home</Link></li>
                         <li className={cl.header__link}><Link to={'#'}>About</Link></li>
-                        <li className={cl.header__link}><Link to={'#'}>Menu</Link></li>
+                        <li className={cl.header__link}><Link to={'/menu'}>Menu</Link></li>
                         <li className={cl.header__link}><Link to={'#'}>Services</Link></li>
                         <li className={cl.header__link}><Link to={'#'}>Contact</Link></li>
                     </ul>

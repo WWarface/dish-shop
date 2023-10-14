@@ -15,10 +15,11 @@ const productSlice = createSlice({
 	reducers: {
 		addProduct(state, action: PayloadAction<IProduct>) {
 			state.products.push({
-				id: action.payload.id,
+				_id: action.payload._id,
 				name: action.payload.name,
 				price: action.payload.price,
-				description: action.payload.description
+				description: action.payload.description,
+				picture: action.payload.picture
 			})
 		},
 		setProducts(state, action: PayloadAction<Array<IProduct>>) {

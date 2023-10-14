@@ -11,8 +11,5 @@ const instance = axios.create({
 
 export async function fetchAllDishes(): Promise<IProduct[]> {
 	const response = await instance.get<Array<IProduct>>('dish')
-
-	console.log(response.data)
-
 	return response.data
 }
