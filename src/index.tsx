@@ -30,11 +30,9 @@ const router = createBrowserRouter([
 ])
 
 root.render(
-	<React.StrictMode>
-		<QueryClientProvider client={client}>
-			<Provider store={reduxStore}>
-				<RouterProvider router={router} />
-			</Provider>
-		</QueryClientProvider>
-	</React.StrictMode>
+	<QueryClientProvider client={client}>
+		<Provider store={reduxStore}>
+			<RouterProvider router={router} />
+		</Provider>
+	</QueryClientProvider>
 )
