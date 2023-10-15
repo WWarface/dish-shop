@@ -9,6 +9,8 @@
 	box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.75);
 
 	background-color: #e3e3e3;
+
+	position: relative;
 }
 
 .dishImage {
@@ -29,11 +31,61 @@
 	align-items: center;
 }
 
-.dishImage:hover {
+.ImageBox:hover .dishImage {
 	width: 90%;
 	height: 90%;
 	object-fit: cover;
 	cursor: pointer;
 	opacity: 0.4;
 	border-radius: 0%;
+}
+
+.cardWrapper:hover .actionsWrapper {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(50, 48, 48);
+	opacity: 0.5;
+	position: absolute;
+	bottom: 10px;
+}
+
+/* Actions */
+
+.actionsWrapper {
+	display: flex;
+
+	width: 100%;
+	height: 50px;
+	background-color: rgb(50, 48, 48);
+	opacity: 0;
+	position: absolute;
+	bottom: 10px;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.actionsBlock {
+	display: flex;
+	width: 75%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.shoppingCart {
+	transition: filter 0.5s ease;
+}
+.shoppingCart:hover {
+	cursor: pointer;
+}
+
+.shoppingCartAddedToCart {
+	transition: filter 0.5s ease;
+	filter: invert(1);
+}
+
+.ellipsis:hover {
+	cursor: pointer;
 }
