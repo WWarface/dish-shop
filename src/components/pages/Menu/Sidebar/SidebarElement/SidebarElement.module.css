@@ -1,0 +1,29 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+
+	gap: 5px;
+}
+
+.divider {
+	width: 100%;
+	height: 2px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px 5px;
+	opacity: 10%;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.wrapper:hover .divider {
+	opacity: 1;
+	height: 4px;
+}
+
+.wrapper:hover {
+	cursor: pointer;
+}
+
+.text {
+	font-size: 22px;
+}

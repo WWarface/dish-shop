@@ -13,3 +13,9 @@ export async function fetchAllDishes(): Promise<IProduct[]> {
 	const response = await instance.get<Array<IProduct>>('dish')
 	return response.data
 }
+export async function fetchDishById(
+	dishId: string | undefined
+): Promise<IProduct> {
+	const response = await instance.get<IProduct>('dish/' + dishId)
+	return response.data
+}

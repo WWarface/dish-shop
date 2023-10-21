@@ -8,12 +8,11 @@ import {
 	removeFromCart
 } from '../../../../redux/slices/productSlice'
 import { useAppDispatch, useAppSelector } from '../../../../hook'
+import { Link } from 'react-router-dom'
 
 type ProductCardProps = IProduct
 
 const ProductCard: FC<ProductCardProps> = product => {
-	const [loading, setLoading] = useState(false)
-	// useEffect(() => {}, [product.isAddedToCart])
 	const dispatch = useAppDispatch()
 	const ifAddedProduct = useAppSelector(state => {
 		return state.products.inCartProducts.some(
@@ -21,10 +20,6 @@ const ProductCard: FC<ProductCardProps> = product => {
 		)
 	})
 	console.log(ifAddedProduct)
-
-	const onChange = (checked: boolean) => {
-		setLoading(!checked)
-	}
 
 	const onCartIconClick = () => {
 		if (ifAddedProduct) {
@@ -36,9 +31,11 @@ const ProductCard: FC<ProductCardProps> = product => {
 	return (
 		<>
 			<div className={cl.cardWrapper}>
-				<div className={cl.ImageBox}>
-					<Base64Img picture={product.picture} className={cl.dishImage} />
-				</div>
+				<Link to={'/menu/' + product._id}>
+					<div className={cl.ImageBox}>
+						<Base64Img picture={product.picture} className={cl.dishImage} />
+					</div>
+				</Link>
 				<div className={cl.actionsWrapper}>
 					<div className={cl.actionsBlock}>
 						<ShoppingCartOutlined
@@ -48,10 +45,12 @@ const ProductCard: FC<ProductCardProps> = product => {
 							}
 							onClick={onCartIconClick}
 						/>
-						<EllipsisOutlined
-							style={{ fontSize: '40px' }}
-							className={cl.ellipsis}
-						/>
+						<Link to={'/menu/' + product._id}>
+							<EllipsisOutlined
+								style={{ fontSize: '40px' }}
+								className={cl.ellipsis}
+							/>
+						</Link>
 					</div>
 				</div>
 			</div>

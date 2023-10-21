@@ -8,6 +8,7 @@ import Layout from './components/pages/Layout/Layout'
 import Home from './components/pages/Home/Home'
 import Menu from './components/pages/Menu/Menu'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import Dish from './components/pages/Dish/Dish'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
 			{
 				path: '/menu',
 				element: <Menu />
+			},
+			{
+				path: '/menu/:userId?',
+				element: <Dish />
 			}
 		]
 	}
