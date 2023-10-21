@@ -1,4 +1,10 @@
 .wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.productsWrapper {
 	/* height: 1500px; */
 	overflow: hidden;
 
@@ -14,10 +20,7 @@
 	justify-content: space-between;
 }
 
-.wrapper::after {
+.productsWrapper::after {
 	content: '';
 	flex: auto;
-}
-.Menu {
-	margin-top: 50px;
 }
