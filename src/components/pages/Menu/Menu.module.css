@@ -1,20 +1,19 @@
 .wrapper {
 	display: flex;
-	flex-direction: row;
-	gap: 30px;
+	flex-direction: column;
 }
 
 .productsWrapper {
 	/* height: 1500px; */
-	overflow: hidden;
+	overflow: visible;
 
 	display: flex;
 	flex-direction: row;
 
 	flex-wrap: wrap;
-	padding-top: 80px;
+	margin-top: 30px;
 	padding-bottom: 40px;
-	column-gap: 30px;
+	column-gap: 36px;
 	row-gap: 45px;
 
 	justify-content: space-between;
@@ -23,4 +22,42 @@
 .productsWrapper::after {
 	content: '';
 	flex: auto;
+}
+
+.menuFront {
+	display: flex;
+	flex-direction: row;
+
+	margin-top: 20px;
+	gap: 35px;
+	height: 350px;
+}
+
+.slider {
+	width: 74%;
+	height: 100%;
+}
+
+.carousel {
+	height: 350px;
+	width: 100%;
+}
+
+.carouselImg {
+	width: 821px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.sliderElementBlock:hover {
+	cursor: pointer;
+}
+
+.dishDescription {
+	font-size: 24px;
+	font-weight: 400;
+
+	letter-spacing: 2px;
+
+	margin-top: 30px;
 }

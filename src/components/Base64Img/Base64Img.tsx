@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import base64ArrayBuffer from '../../features/bufferConvertor'
 
 interface Base64ImgProps {
 	picture: { data: { data: Buffer }; imageType: string } | undefined
-	className: string
+	className?: string
 }
 
 const Base64Img: FC<Base64ImgProps> = ({ picture, className }) => {
