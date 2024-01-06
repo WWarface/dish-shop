@@ -38,6 +38,9 @@
 .descriptionCombiner {
 	display: flex;
 	margin-top: 20px;
+	@media only screen and (max-width: 767px) {
+		margin-top: 10px;
+	}
 }
 
 /* Icons */
@@ -91,4 +94,29 @@
 	display: flex;
 	justify-content: center;
 	padding-bottom: 20px;
+}
+
+.logoText {
+	@media only screen and (max-width: 767px) {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.descriptionItemText {
+		margin-bottom: 10px; /* Уменьшаем отступ между текстовыми блоками */
+		line-height: 20px; /* Уменьшаем высоту строки */
+	}
+
+	.descriptionItem {
+		margin-left: 20px; /* Уменьшаем отступ слева для текстовых блоков */
+	}
+
+	.logoText {
+		font-size: 14px; /* Уменьшаем размер текста в логотипе для мобильных устройств */
+	}
+
+	.wrapper {
+		height: 436px;
+	}
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect, FC } from 'react'
+import { FC } from 'react'
 import cl from './ProductCard.module.css'
 import { IProduct } from '../../../../types/productTypes'
 import Base64Img from '../../../Base64Img/Base64Img'

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import cl from './Footer.module.css'
 import instagramIcon from './../../assets/icons/instagram.svg'
 import facebookIcon from './../../assets/icons/facebook.svg'
